@@ -11,6 +11,9 @@
 }
 
 /* shared styles */
+.hide{
+  display: none;
+}
 .display-flex {
   display: flex;
 }
@@ -129,6 +132,44 @@
 .feature-container button {
   margin-top: 32px;
 }
+/* some facts section styles */
+
+.fact-title {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+/* border styles just */
+.fact-container {
+  border: 1px solid red;
+}
+.badge-container {
+  border: 1px solid forestgreen;
+  width: 80%;
+  margin: 100px auto 0;
+}
+.badge-item{
+  border: 1px solid blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* responsive styles */
 
