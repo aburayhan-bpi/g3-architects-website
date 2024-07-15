@@ -200,8 +200,8 @@
   border: 1px solid violet;
 }
 
-#feature-section-title{
-  border-left: 5px solid #FF900E;
+#feature-section-title {
+  border-left: 5px solid #ff900e;
   padding-left: 20px;
 }
 .section-title {
@@ -210,7 +210,7 @@
   margin-bottom: 24px;
 }
 
-.section-subtitle{
+.section-subtitle {
   margin-bottom: 30px;
 }
 .feature-card {
@@ -226,40 +226,41 @@
   margin-top: 0px;
   margin-bottom: 0px;
 }
+/* .architect-experience-container{
+  width: 100%;
+} */
+.architect-experience-container{
+  flex-direction: column;
+  width: 100%;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#experience-badge {
+  width: 50%;
+  padding: 30px 32px;
+  margin-left: -60px;
+  margin-top: -100px;
+}
+#experience-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#experience-year {
+  font-size: 4rem;
+  font-weight: 700;
+}
 
 /* responsive styles */
 
-/* nav section responsive */
-@media screen and (max-width: 576px) {
-  .navbar,
-  .nav-items {
-    flex-direction: column;
-  }
-}
 
 /* team container responsive */
 @media screen and (max-width: 576px) {
+  .navbar,
+  .nav-items,
+  .features,
+  .architect-experience-container{
+    flex-direction: column;
+  }
   .nav-item {
     margin: 0;
   }
@@ -301,6 +302,19 @@
     gap: 50px;
     justify-items: center;
   }
+  #experience-badge{
+    width: 90%;
+    padding: 20px 30px;
+    margin: 20px auto 20px;
+  }
+  #experience-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  #experience-year {
+    font-size: 2rem;
+    font-weight: 700;
+  }
 }
 
 /* for tablet devices */
@@ -319,8 +333,30 @@
     width: 100%;
     justify-items: center;
   }
+  .features,
+  .architect-experience-container{
+    flex-direction: column;
+  }
+  .architect-experience-container img{
+    width: 60%;
+    margin: 0 auto;
+  }
+  #experience-badge {
+    width: 30%;
+    padding: 20px 25px;
+    margin-left: 85px;
+    margin-top: -60px;
+  }
+  #experience-name {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  #experience-year {
+    font-size: 2rem;
+    font-weight: 700;
+  }
 }
-
+/* laptop and others */
 @media screen and (min-width: 992px) and (max-width: 1024px) {
   /* sponsors */
   .sponsors-companies {
@@ -339,5 +375,28 @@
     /* border: 1px solid blue; */
     max-width: 100%;
     justify-items: center;
+  }
+  .features {
+    gap: 90px;
+    border: 1px solid violet;
+  }
+  .architect-experience-container img{
+    border: 1px solid red;
+    width: 100%;
+    margin: auto 0;
+  }
+  #experience-badge {
+    width: 60%;
+    padding: 20px 10px;
+    margin-left: -60px;
+    margin-top: -460px;
+  }
+  #experience-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  #experience-year {
+    font-size: 2.5rem;
+    font-weight: 700;
   }
 }
