@@ -194,6 +194,60 @@
   filter: grayscale(100%);
 }
 
+/* feature section styles */
+.features {
+  gap: 90px;
+  border: 1px solid violet;
+}
+
+#feature-section-title{
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+}
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.section-subtitle{
+  margin-bottom: 30px;
+}
+.feature-card {
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.feature-card .feature-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive styles */
 
 /* nav section responsive */
@@ -276,7 +330,7 @@
     gap: 40px;
     justify-items: center;
   }
-  .badge-card{
+  .badge-card {
     width: 200px;
     height: 220px;
   }
