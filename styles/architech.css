@@ -17,6 +17,9 @@
 .primary-bg {
   background: rgba(255, 144, 14, 0.1);
 }
+.primary-color {
+  color: #ff900e;
+}
 .dark-2 {
   color: #424242;
 }
@@ -24,31 +27,48 @@
   color: #727272;
 }
 
+.primary-btn {
+  min-width: 20%;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background: #ff900e;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.main > section {
+  margin-top: 90px;
+}
+
 /* header related styles */
 .brand {
   font-size: 2rem;
 }
 .navbar,
-.banner {
-  /* border: 1px solid red; */
+.banner,
+.main {
+  /* display flex are there */
   align-items: center;
   justify-content: space-between;
   max-width: 1240px;
   margin: 0 auto;
+  border: 1px solid red;
 }
 .nav-items {
   /* border: 1px solid green; */
   list-style-type: none;
 }
 
-.nav-items li {
+.nav-item {
   margin-left: 50px;
 }
 .nav-items a {
   text-decoration: none;
 }
-/* banner */
 
+/* banner */
 .banner-container {
   width: 80%;
   margin: 0 auto;
@@ -64,17 +84,6 @@
   line-height: 24px;
   margin-bottom: 32px;
 }
-.banner-container button {
-  min-width: 20%;
-  padding: 20px 25px;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  background: #ff900e;
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 50px;
-}
 
 .banner-image {
   width: 100%;
@@ -83,9 +92,78 @@
 .banner-image img {
   width: 100%;
 }
+
+/* team and feature section styles */
+
+.team-container {
+  align-items: center;
+  border: 1px solid violet;
+}
+
+.team-image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* border: 1px solid blue; */
+  gap: 20px;
+  width: 50%;
+}
+.team-image-container img {
+  width: 100%;
+}
+.feature-container {
+  width: 50%;
+  margin-left: 73px;
+  /* border: 1px solid darkgreen; */
+}
+.feature-container h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.feature-container p {
+  max-width: 537px;
+}
+#quick-text {
+  font-weight: 500;
+}
+.feature-container button {
+  margin-top: 32px;
+}
+
 /* responsive styles */
-@media screen and (max-width: 576px){
-    .navbar, .nav-items{
-        flex-direction: column;
-    }
+
+/* nav section responsive */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-items {
+    flex-direction: column;
+  }
+}
+
+/* team container responsive */
+@media screen and (max-width: 576px) {
+  .nav-item {
+    margin: 0;
+  }
+  .team-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .feature-container {
+    margin: 0;
+    width: 100%;
+  }
+  .feature-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .team-image-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* border: 1px solid blue; */
+    gap: 20px;
+    width: 100%;
+  }
 }
