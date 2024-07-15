@@ -57,7 +57,7 @@
   justify-content: space-between;
   max-width: 1240px;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .nav-items {
   /* border: 1px solid green; */
@@ -100,7 +100,7 @@
 
 .team-container {
   align-items: center;
-  border: 1px solid violet;
+  /* border: 1px solid violet; */
 }
 
 .team-image-container {
@@ -132,6 +132,62 @@
 .feature-container button {
   margin-top: 32px;
 }
+
+/* feature section styles */
+.features {
+  gap: 90px;
+  /* border: 1px solid violet; */
+}
+
+#feature-section-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.section-subtitle {
+  margin-bottom: 30px;
+}
+.feature-card {
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.feature-card .feature-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/* .architect-experience-container{
+  width: 100%;
+} */
+.architect-experience-container {
+  flex-direction: column;
+  width: 100%;
+}
+
+#experience-badge {
+  width: 50%;
+  padding: 30px 32px;
+  margin-left: -60px;
+  margin-top: -100px;
+}
+#experience-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#experience-year {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
 /* some facts section styles */
 
 .fact-title {
@@ -140,6 +196,7 @@
 }
 .fact-subtitle {
   max-width: 542px;
+  margin-bottom: 30px;
 }
 .badge-container {
   display: grid;
@@ -197,7 +254,7 @@
 /* feature section styles */
 .features {
   gap: 90px;
-  border: 1px solid violet;
+  /* border: 1px solid violet; */
 }
 
 #feature-section-title {
@@ -229,11 +286,10 @@
 /* .architect-experience-container{
   width: 100%;
 } */
-.architect-experience-container{
+.architect-experience-container {
   flex-direction: column;
   width: 100%;
 }
-
 
 #experience-badge {
   width: 50%;
@@ -250,16 +306,40 @@
   font-weight: 700;
 }
 
+/* footer section styles */
+
+.footer {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-top: 90px;
+  padding: 38px auto;
+  border-radius: 8px;
+  background: #fff4e7;
+}
+.footer-content {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
 /* responsive styles */
+/* mobile devices */
 
-
-/* team container responsive */
 @media screen and (max-width: 576px) {
   .navbar,
-  .nav-items,
   .features,
-  .architect-experience-container{
+  .architect-experience-container {
     flex-direction: column;
+  }
+  .nav-items{
+    flex-direction: row;
+    gap: 15px;
+    padding: 0;
+    margin-top: -5px;
   }
   .nav-item {
     margin: 0;
@@ -302,7 +382,7 @@
     gap: 50px;
     justify-items: center;
   }
-  #experience-badge{
+  #experience-badge {
     width: 90%;
     padding: 20px 30px;
     margin: 20px auto 20px;
@@ -334,10 +414,10 @@
     justify-items: center;
   }
   .features,
-  .architect-experience-container{
+  .architect-experience-container {
     flex-direction: column;
   }
-  .architect-experience-container img{
+  .architect-experience-container img {
     width: 60%;
     margin: 0 auto;
   }
@@ -378,10 +458,10 @@
   }
   .features {
     gap: 90px;
-    border: 1px solid violet;
+    /* border: 1px solid violet; */
   }
-  .architect-experience-container img{
-    border: 1px solid red;
+  .architect-experience-container img {
+    /* border: 1px solid red; */
     width: 100%;
     margin: auto 0;
   }
